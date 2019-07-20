@@ -8,7 +8,10 @@
     <h1 id="header1">Vue 2</h1>
     <div id="app">
       <span v-if="seen">{{ message }}</span>
-      <button v-on:click="showMsg">Show - hide</button>
+      <button v-on:click="showMsg">
+        <span v-if="seen">Hide</span>
+        <span v-else>Show</span>
+      </button>
     </div>
 
     <script src="index.js"></script>
