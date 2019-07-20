@@ -3,5 +3,10 @@ var app = new Vue({
     data: {
         seen: false,
         message: "You cant see me!"
-    }
+    },
+    methods: {
+        showMsg: function () {
+            app.seen = !app.seen;
+        }
+    },
 })
